@@ -2,16 +2,16 @@ import { Github, Twitter, Linkedin, Instagram} from 'lucide-react';
 
 const Home = () => {
   return (
-    <div className="space-y-9">
-      <h1 className="text-4xl font-bold">hey, i'm andrew cheng</h1>
+    <div className="space-y-4">
+      <h1 className="text-2xl font-bold">hey, i'm andrew cheng</h1>
       
-      <p className="text-xl">
-        i'm a college freshman that builds and solves problems 
+      <p className="text-md">
+        i'm a college freshman that builds stuff to solves problems 
       </p>
 
       <section>
-        <h2 className="text-2xl font-bold mb-4">what i'm up to:</h2>
-          <ul className="pl-5 space-y-2">
+        <h2 className="text-xl font-bold mb-4">what i'm up to:</h2>
+          <ul className="text-sm  pl-5 space-y-2">
             <li>- figuring out what to do with my life</li>
             <li>- learning as much as i can</li>
             <li>- trying to meet cool people</li>
@@ -19,8 +19,8 @@ const Home = () => {
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold mb-4">previously:</h2>
-        <ul className="pl-5 space-y-2">
+        <h2 className="text-xl font-bold mb-4">previously:</h2>
+        <ul className="text-sm pl-5 space-y-2">
           <li>- best overall hack @ columbia devfest (<a className = "underline"href = "./Projects">social stockfish</a>)</li>
           <li>- stony brook icpc (top 30 GNY, syntax saviors winning it all in 2025)</li>
           <li>- high school stuff</li>
@@ -35,8 +35,8 @@ const Home = () => {
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold mb-4">thinking about:</h2>
-        <ul className="space-y-1">
+        <h2 className="text-xl font-bold mb-4">thinking about:</h2>
+        <ul className="text-sm space-y-1">
           <li>- personal agency</li>
           <li>- communication</li>
           <li>- archetypes of people</li>
@@ -44,8 +44,8 @@ const Home = () => {
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold mb-4">get in touch:</h2>
-        <div className="flex flex-col gap-2 space-x-4 space-y-2">
+        <h2 className="text-xl font-bold mb-4">get in touch:</h2>
+        <div className="text-sm flex flex-col gap-2 space-x-4 space-y-2">
           <div>
             talking to interesting people from different background drives me to build cool things. reach out so we can chat!
           </div>
