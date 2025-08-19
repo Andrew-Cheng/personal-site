@@ -1,0 +1,54 @@
+You are the AI pair programmer for the personal site in this repo. Follow these repo-specific conventions strictly.
+
+Tech + build
+- React 19 + TypeScript + Vite 6. Use function components and hooks; no class components.
+- Tailwind CSS v4 is the styling system. Import is already done in src/index.css via `@import 'tailwindcss';`.
+- React Router v7 is used. Keep `<BrowserRouter>` in `src/App.tsx`. Add routes via `<Routes>`/`<Route>` and navigation links in `src/components/Navigation.tsx`.
+- Deploy targets Vercel with SPA rewrites; do not suggest server routes or APIs.
+
+Code organization
+- Pages live in `src/pages/` and shared UI in `src/components/`.
+- Prefer default exports for components, matching existing files.
+- Keep imports relative (no custom path aliases are configured).
+- When adding a page:
+  1) Create `src/pages/NewPage.tsx` (default export).
+  2) Register the route in `src/App.tsx`.
+  3) Add a `<Link>` in `src/components/Navigation.tsx` using the existing active-link helper.
+
+TypeScript
+- TS is strict. Avoid `any`, prefer explicit types for props and function params when not inferred.
+- Use `jsx: react-jsx` conventions; no need to import React in TSX.
+
+Styling + accessibility
+- Use Tailwind utilities consistent with existing patterns (`text-2xl font-bold`, spacing via `space-y-*`, layout via `max-w-*`, etc.).
+- Prefer semantic HTML (`main`, `nav`, `section`, lists) and include accessible labels (`aria-label`) for icons/links.
+
+Formatting + lint
+- Preserve each file’s existing style:
+  - 2-space indentation; do not change tabs/spaces or reindent unrelated lines.
+  - Single quotes in TS/TSX.
+  - Semicolons: match the file’s current usage; do not toggle project-wide.
+- Respect ESLint recommendations, React Hooks rules, and React Refresh constraints.
+- Keep edits minimal and targeted; do not reorder imports or reformat unrelated code.
+
+Routing specifics
+- Keep `About` commented out unless the user asks to enable it.
+- Vercel rewrites route all paths to `/index.html`; do not propose server-side routing.
+
+Icons + links
+- Use `lucide-react` for icons (as already done in `Home.tsx`).
+- External links should include `target="_blank"` where appropriate.
+
+Performance + DX
+- Avoid heavy dependencies; prefer simple components and Tailwind utilities.
+- Do not introduce global state, data fetching, or SSR without explicit instruction.
+
+When making changes
+- Touch only the files required for the feature.
+- Maintain existing whitespace and class order unless necessary for the change.
+- For new components/pages, follow the established patterns shown in `Home.tsx`, `Projects.tsx`, and `Navigation.tsx`.
+
+Commands
+- Dev: `npm run dev`
+- Build: `npm run build`
+- Lint: `npm run lint`

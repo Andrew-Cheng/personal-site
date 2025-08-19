@@ -6,30 +6,31 @@ const Home = () => {
       <h1 className="text-2xl font-bold">hey, i'm andrew cheng</h1>
       
       <p className="text-md">
-        i'm a college freshman that builds stuff to solves problems 
+        i'm a guy that builds stuff to solve problems 
       </p>
 
       <section>
         <h2 className="text-xl font-bold mb-4">what i'm up to:</h2>
           <ul className="text-sm  pl-5 space-y-2">
-            <li>- figuring out what to do with my life</li>
-            <li>- learning as much as i can</li>
-            <li>- trying to meet cool people</li>
+            <li>- interning @ scale ai working on SOTA models</li>
+            <li>- building authentic</li>
+            <li>- launching a matcha truck.... perhaps</li>
           </ul>
       </section>
 
       <section>
         <h2 className="text-xl font-bold mb-4">previously:</h2>
         <ul className="text-sm pl-5 space-y-2">
+          <li>- worked on crowdtest (<a className = "underline"href = "./Projects">crowdtest</a>)</li>
           <li>- best overall hack @ columbia devfest (<a className = "underline"href = "./Projects">social stockfish</a>)</li>
-          <li>- stony brook icpc (top 30 GNY, syntax saviors winning it all in 2025)</li>
+          <li>- stony brook icpc (top 30 GNY, syntax saviors gonna win it all in 2025)</li>
           <li>- high school stuff</li>
             <ul className = "list-disc pl-9 space-y-2">
               <li>salutatorian (2/390), 1570 on a standardized test</li>
               <li>math team, math honor society president (top 5 NCIML, top 20 ARML)</li>
-              <li>ran some other clubs (nhs president, multicultural show director)</li>
               <li>top 500 trading seashells and fish (imc prosperity 2)</li>
               <li>grandmaster (top 1000 NA) teamfight tactics</li>
+              <li>started a weekly coding class at the local library for middle schoolers</li>
             </ul>
         </ul>
       </section>
@@ -37,9 +38,9 @@ const Home = () => {
       <section>
         <h2 className="text-xl font-bold mb-4">thinking about:</h2>
         <ul className="text-sm space-y-1">
-          <li>- personal agency</li>
+          <li>- relationships</li>
           <li>- communication</li>
-          <li>- archetypes of people</li>
+          <li>- leverage</li>
         </ul>
       </section>
 
@@ -47,7 +48,7 @@ const Home = () => {
         <h2 className="text-xl font-bold mb-4">get in touch:</h2>
         <div className="text-sm flex flex-col gap-2 space-x-4 space-y-2">
           <div>
-            talking to interesting people from different background drives me to build cool things. reach out so we can chat!
+            i love talking to people from different backgrounds, so reach out!
           </div>
           <div>
           email me at andrew.hua.cheng.2006 [at] gmail [dot] com
