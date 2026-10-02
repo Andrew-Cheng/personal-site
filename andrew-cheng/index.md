@@ -9,10 +9,10 @@ I'm currently a junior studying Computer Science and Math at Stony Brook Univers
 
 I spent my summer working on agents at Roblox, competing in TFT tournaments (won 100 bucks yay!), and climbing the Beli ranks. Before that, I was interning at Scale AI, and tinkering with a bunch of cool [side projects]({{ '/projects/' | relative_url }})! 
 
-I enjoy occasionally unslopping my brain with fun algorithmic problems, previously top 30 ICPC in Greater New York region (<3 syntax saviors).
+I enjoy unslopping my brain with fun algorithmic problems, send me fun problems to solve!
 
-
-Some random sidequests from a past life:
+Some random sidequests:
+  - 2x top 30 ICPC in Greater New York (<3 syntax saviors)
   - Salutatorian (2/~400) from a public US high school
   - Math competitions! (ARML, NYSML) 
   - Grandmaster (top 500 NA) Teamfight Tactics
