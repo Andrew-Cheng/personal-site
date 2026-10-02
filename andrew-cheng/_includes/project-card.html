@@ -1,21 +1,28 @@
 <article class="project-card" id="{{ include.project.title | slugify }}">
   <h2>{{ include.project.title | escape }}</h2>
-  <p>{{ include.project.description | escape }}</p>
-  {% unless include.project.features == empty %}
-  <h3>Features:</h3>
-  <ul class="features">
-    {% for feature in include.project.features %}<li>{{ feature | escape }}</li>{% endfor %}
-  </ul>
-  {% endunless %}
+  <div class="project-body">
+    {{ include.project.content | markdownify }}
+  </div>
   <h3>Credits:</h3>
   <div class="credits">
     {% for credit in include.project.credits %}
+    {% if credit.url %}
     <a href="{{ credit.url | escape }}" target="_blank" rel="noopener noreferrer">{{ credit.name | escape }}</a>
+    {% else %}
+    <span>{{ credit.name | escape }}</span>
+    {% endif %}
     {% endfor %}
   </div>
   {% if include.project.video %}
   <video src="{{ include.project.video | relative_url }}" controls preload="metadata" aria-label="{{ include.project.title | escape }} demo">
     Your browser does not support the video tag.
   </video>
+  {% endif %}
+  {% if include.project.pdf %}
+  <section class="project-report" aria-label="{{ include.project.title | escape }} report">
+    <h3>Project report</h3>
+    <p><a href="{{ include.project.pdf | relative_url }}" target="_blank" rel="noopener noreferrer">Open the full report (PDF)</a></p>
+    {% include pdf.html path=include.project.pdf title=include.project.title %}
+  </section>
   {% endif %}
 </article>

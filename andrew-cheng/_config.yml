@@ -1,8 +1,11 @@
 title: Andrew Cheng
-description: "i'm a guy that builds stuff to solve problems"
+description: "I'm a guy that builds stuff to solve problems"
 url: https://andrew-cheng.com
 baseurl: ""
 permalink: pretty
+collections:
+  projects:
+    output: false
 exclude:
   - Gemfile
   - Gemfile.lock

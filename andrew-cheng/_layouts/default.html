@@ -10,7 +10,7 @@
   <body>
     <div class="site-shell">
       {% include navigation.html %}
-      <main>{{ content }}</main>
+      <main{% if page.page_class %} class="{{ page.page_class | escape }}"{% endif %}>{{ content }}</main>
     </div>
   </body>
 </html>

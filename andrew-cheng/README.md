@@ -1,6 +1,6 @@
 # Andrew Cheng's personal site
 
-A Jekyll site with plain CSS and static HTML, deployed to GitHub Pages.
+A Jekyll site with Markdown content and plain CSS, deployed to GitHub Pages.
 
 ## Run locally
 
@@ -15,7 +15,7 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Open http://127.0.0.1:4000/personal-site/. Stop the server with Ctrl-C. Content and CSS changes rebuild automatically; restart after changing `_config.yml`.
+Open http://127.0.0.1:4000/. Stop the server with Ctrl-C. Content and CSS changes rebuild automatically; restart after changing `_config.yml`.
 
 To preview at the domain root instead:
 
@@ -25,15 +25,22 @@ bundle exec jekyll serve --baseurl ""
 
 ## Edit the site
 
-- `index.html`: homepage content.
-- `_data/projects.json`: project descriptions, features, credits, and videos.
-- `_includes/`: navigation, social icons, and project cards.
+- `index.md`: homepage content.
+- `projects.md`: Projects page heading and project-list include.
+- `_projects/*.md`: one Markdown file per project; edit descriptions and bullet points here. The YAML front matter stores the title, display order, credits, and optional video/PDF paths.
+- `resume.md`: Resume page text and PDF include.
+- `404.md`: page-not-found content.
+- `_includes/`: shared navigation, social icons, project cards, and PDF embeds.
 - `_layouts/default.html`: shared page shell and metadata.
 - `assets/css/style.css`: styling.
-- `public/`: video files (their URLs include `/public/`).
+- `public/`: videos and PDFs (their URLs include `/public/`). Replace `resume.pdf` here to update your resume.
 - `_config.yml`: site title, URL, and base path.
 
 Internal links and asset paths must use Liquid's `relative_url` filter so they work under the repository path and at a custom domain.
+
+Use normal Markdown for content: `## Heading`, `- List item`, and `[SATA](https://arxiv.org/abs/2409.19850)` for a clickable word. To add a project, copy a file in `_projects/`, edit its content and front matter, and choose its `order`.
+
+Always edit the source files listed above, never files inside `_site/`; Jekyll overwrites that generated folder on each build.
 
 ## Build
 
@@ -49,7 +56,7 @@ Output goes to `_site/`, which is ignored by Git. No Node.js build is needed.
 2. Commit and push the migration to `main`.
 3. The `.github/workflows/pages.yml` workflow builds the site and deploys it. Pull requests build without deploying.
 
-The configured address is https://andrew-cheng.github.io/personal-site/.
+The configured address is https://andrew-cheng.com/.
 
 For a custom domain, set `url` to the full HTTPS domain and `baseurl: ""` in `_config.yml`, then configure the custom domain and DNS in GitHub Pages settings. For an `Andrew-Cheng.github.io` repository, also set `baseurl: ""`.
 
