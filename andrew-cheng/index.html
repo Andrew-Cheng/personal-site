@@ -1,13 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Andrew Cheng</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+---
+layout: default
+---
+<div class="home">
+  <h1>hey, i'm andrew cheng</h1>
+  <p>i'm a guy that builds stuff to solve problems</p>
+  <section>
+    <h2>what i'm up to:</h2>
+    <ul class="indented">
+      <li>- interning @ scale ai working on SOTA models</li>
+      <li>- building authentic</li>
+      <li>- working on something new</li>
+    </ul>
+  </section>
+  <section>
+    <h2>previously:</h2>
+    <ul class="indented">
+      <li>- worked on crowdtest (<a href="{{ '/projects/' | relative_url }}#crowdtest">crowdtest</a>)</li>
+      <li>- best overall hack @ columbia devfest (<a href="{{ '/projects/' | relative_url }}#social-stockfish">social stockfish</a>)</li>
+      <li>- stony brook icpc (top 30 GNY, syntax saviors gonna win it all in 2025)</li>
+      <li>- high school stuff
+        <ul class="bullets">
+          <li>salutatorian (2/390), 1570 on a standardized test</li>
+          <li>math team, math honor society president (top 5 NCIML, top 20 ARML)</li>
+          <li>top 500 trading seashells and fish (imc prosperity 2)</li>
+          <li>grandmaster (top 1000 NA) teamfight tactics</li>
+          <li>started a weekly coding class at the local library for middle schoolers</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h2>thinking about:</h2>
+    <ul class="compact">
+      <li>- relationships</li>
+      <li>- communication</li>
+      <li>- leverage</li>
+    </ul>
+  </section>
+  <section>
+    <h2>get in touch:</h2>
+    <div class="contact">
+      <p>i love talking to people from different backgrounds, so reach out!</p>
+      <p>email me at andrew.hua.cheng.2006 [at] gmail [dot] com</p>
+      {% include social-links.html %}
+    </div>
+  </section>
+</div>

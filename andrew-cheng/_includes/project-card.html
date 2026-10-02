@@ -1,0 +1,21 @@
+<article class="project-card" id="{{ include.project.title | slugify }}">
+  <h2>{{ include.project.title | escape }}</h2>
+  <p>{{ include.project.description | escape }}</p>
+  {% unless include.project.features == empty %}
+  <h3>Features:</h3>
+  <ul class="features">
+    {% for feature in include.project.features %}<li>{{ feature | escape }}</li>{% endfor %}
+  </ul>
+  {% endunless %}
+  <h3>Credits:</h3>
+  <div class="credits">
+    {% for credit in include.project.credits %}
+    <a href="{{ credit.url | escape }}" target="_blank" rel="noopener noreferrer">{{ credit.name | escape }}</a>
+    {% endfor %}
+  </div>
+  {% if include.project.video %}
+  <video src="{{ include.project.video | relative_url }}" controls preload="metadata" aria-label="{{ include.project.title | escape }} demo">
+    Your browser does not support the video tag.
+  </video>
+  {% endif %}
+</article>

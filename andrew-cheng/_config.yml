@@ -1,0 +1,14 @@
+title: Andrew Cheng
+description: "i'm a guy that builds stuff to solve problems"
+url: https://andrew-cheng.github.io
+baseurl: /personal-site
+permalink: pretty
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - node_modules
+  - dist
+  - src
+  - scripts
