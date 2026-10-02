@@ -5,11 +5,11 @@ permalink: /
 ---
 # Hey, I'm Andrew Cheng
 
-I'm currently a junior studying Computer Science and Math at Stony Brook University on gap to work on EC2 Networking at AWS. I'm interested in building useful and observable systems for agents. 
+I'm currently a junior studying Computer Science and Math at Stony Brook University on gap to work on EC2 Networking at AWS. I'm interested in building useful and observable systems for agents, and always looking to learn and experience more! 
 
 I spent my summer working on agents at Roblox, competing in TFT tournaments (won 100 bucks yay!), and climbing the Beli ranks. Before that, I was interning at Scale AI, and tinkering with a bunch of cool [side projects]({{ '/projects/' | relative_url }})! 
 
-I enjoy unslopping my brain with fun algorithmic problems, send me fun problems to solve!
+I enjoy unslopping my brain with fun algorithmic problems, send me fun problems to solve! Outside of that, I enjoy reading, cooking and matcha!
 
 Some random sidequests:
   - 2x top 30 ICPC in Greater New York (<3 syntax saviors)
