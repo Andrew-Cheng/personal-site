@@ -1,7 +1,7 @@
 title: Andrew Cheng
 description: "i'm a guy that builds stuff to solve problems"
-url: https://andrew-cheng.github.io
-baseurl: /personal-site
+url: https://andrew-cheng.com
+baseurl: ""
 permalink: pretty
 exclude:
   - Gemfile
